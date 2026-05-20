@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PULSE — SMM агентство</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./css/styles.css">
+        <script src="./js/main.js" defer></script>
+
+    </head>
+    <body>
+
+    <!-- NAV -->
+        <header>
+            <nav>
+                <a href="#" class="nav-logo">PULSE<span>.</span></a>
+                <ul class="nav-links">
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#services">Услуги</a></li>
+                    <li><a href="#cases">Кейсы</a></li>
+                    <li><a href="#pricing">Цены</a></li>
+                    <li><a href="#contact">Контакты</a></li>
+                </ul>
+                <a href="#contact" class="nav-cta">Обсудить проект</a>
+                <button class="burger" onclick="document.querySelector('.mobile-menu').classList.add('open')">
+                    <span></span><span></span><span></span>
+                </button>
+            </nav>
+
+            <div class="mobile-menu">
+                <button class="mobile-close" onclick="document.querySelector('.mobile-menu').classList.remove('open')">✕</button>
+                <a href="#about" onclick="document.querySelector('.mobile-menu').classList.remove('open')">О нас</a>
+                <a href="#services" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Услуги</a>
+                <a href="#cases" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Кейсы</a>
+                <a href="#pricing" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Цены</a>
+                <a href="#contact" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Контакты</a>
+            </div>
+
+        </header>
+        
+        <main>
+            <!-- HERO -->
+            <section class="hero">
+                <div class="hero-bg-shape"></div>
+                <div>
+                    <div class="hero-badge">SMM агентство</div>
+                    <h1>ДЕЛАЕМ<br>БРЕНДЫ<br><em>ГРОМКИМИ</em></h1>
+                    <p class="hero-sub">Стратегический SMM для бизнеса, который хочет расти. Создаём контент, строим аудитории, конвертируем подписчиков в клиентов.</p>
+                    <div class="hero-actions">
+                        <a href="#contact" class="btn-primary">Начать проект</a>
+                        <a href="#cases" class="btn-outline">Смотреть кейсы</a>
+                    </div>
+                </div>
+                <div class="hero-right fade-up">
+                    <div class="hero-stats-row">
+                        <div class="stat-card">
+                            <div class="num">120+</div>
+                            <div class="label">Клиентов по всей Украине</div>
+                        </div>
+                        <div class="stat-card accent">
+                            <div class="num">4×</div>
+                            <div class="label">Рост охватов в среднем</div>
+                        </div>
+                    </div>
+                    <div class="hero-visual">
+                        <div class="vis-title">Рост аудитории — последние 6 мес</div>
+                        <div class="vis-bar-wrap">
+                            <div class="vis-bar-row">
+                                <div class="vis-bar-label">INST</div>
+                                <div class="vis-bar-track"><div class="vis-bar-fill a1" style="width:82%"></div></div>
+                                <div class="vis-bar-val">+82%</div>
+                            </div>
+                            <div class="vis-bar-row">
+                                <div class="vis-bar-label">TG</div>
+                                <div class="vis-bar-track"><div class="vis-bar-fill a2" style="width:65%"></div></div>
+                                <div class="vis-bar-val">+65%</div>
+                            </div>
+                            <div class="vis-bar-row">
+                                <div class="vis-bar-label">TT</div>
+                                <div class="vis-bar-track"><div class="vis-bar-fill a3" style="width:91%"></div></div>
+                                <div class="vis-bar-val">+91%</div>
+                            </div>
+                            <div class="vis-bar-row">
+                                <div class="vis-bar-label">YT</div>
+                                <div class="vis-bar-track"><div class="vis-bar-fill a2" style="width:47%"></div></div>
+                                <div class="vis-bar-val">+47%</div>
+                            </div>
+                        </div>
+                        <div class="vis-platforms">
+                            <div class="vis-platform">Instagram</div>
+                            <div class="vis-platform">Telegram</div>
+                            <div class="vis-platform">TikTok</div>
+                            <div class="vis-platform">YouTube</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MARQUEE -->
+            <div class="marquee-section">
+                <div class="marquee-track">
+                    <div class="marquee-item"><span>✦</span> Контент-стратегия <span>✦</span> Таргетированная реклама <span>✦</span> Видеопроизводство <span>✦</span> Аналитика <span>✦</span> Посевы <span>✦</span> Коллаборации с блогерами <span>✦</span> Дизайн <span>✦</span> Reels & Shorts <span>✦</span></div>
+                    <div class="marquee-item"><span>✦</span> Контент-стратегия <span>✦</span> Таргетированная реклама <span>✦</span> Видеопроизводство <span>✦</span> Аналитика <span>✦</span> Посевы <span>✦</span> Коллаборации с блогерами <span>✦</span> Дизайн <span>✦</span> Reels & Shorts <span>✦</span></div>
+                </div>
+            </div>
+
+            <!-- ABOUT -->
+            <section class="section" id="about">
+                <span class="section-tag">О нас</span>
+                <h2 class="section-title">Команда, которая<br>работает на результат</h2>
+                <div class="about-grid">
+                    <div>
+                        <div class="about-text">
+                            <p>Мы не просто создаём посты — мы строим экосистему присутствия вашего бренда в соцсетях. Каждое действие измеряется, каждая гипотеза проверяется.</p>
+                            <p>4 года в нише, 120+ закрытых проектов, и ни одного без роста ключевых метрик. Это не удача — это система.</p>
+                        </div>
+                    </div>
+                    <div class="about-right">
+                        <div class="about-item fade-up">
+                            <span class="about-num">01</span>
+                            <div>
+                                <h4>Глубокий аналит перед стартом</h4>
+                                <p>Изучаем нишу, конкурентов и аудиторию — только потом берёмся за стратегию.</p>
+                            </div>
+                        </div>
+                        <div class="about-item fade-up">
+                            <span class="about-num">02</span>
+                            <div>
+                                <h4>Нет шаблонам, есть позиционирование</h4>
+                                <p>Каждый бренд уникален. Наш контент узнают даже без логотипа.</p>
+                            </div>
+                        </div>
+                        <div class="about-item fade-up">
+                            <span class="about-num">03</span>
+                            <div>
+                                <h4>Прозрачная отчётность</h4>
+                                <p>Еженедельные дашборды, ежемесячные стратегические сессии. Вы всегда знаете, что происходит.</p>
+                            </div>
+                        </div>
+                        <div class="about-item fade-up">
+                            <span class="about-num">04</span>
+                            <div>
+                                <h4>Один менеджер — вся команда</h4>
+                                <p>Один контакт, который управляет командой из стратега, дизайнера, копирайтера и таргетолога.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SERVICES -->
+            <section class="services-section" id="services">
+                <span class="section-tag">Услуги</span>
+                <h2 class="section-title">Что мы делаем</h2>
+                <div class="services-grid">
+                    <div class="service-card fade-up">
+                        <div class="service-icon">📐</div>
+                        <h3>SMM-стратегия</h3>
+                        <p>Полноценная стратегия присутствия в соцсетях: позиционирование, TOV, контент-план, воронки продаж через соцсети.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">Аудит</span>
+                            <span class="service-tag">TOV</span>
+                            <span class="service-tag">Карта контента</span>
+                        </div>
+                    </div>
+                    <div class="service-card fade-up">
+                        <div class="service-icon">🎬</div>
+                        <h3>Производство контента</h3>
+                        <p>Фото, видео, Reels, Stories, карусели — создаём контент, который хочется сохранять и пересылать.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">Reels</span>
+                            <span class="service-tag">Shorts</span>
+                            <span class="service-tag">Stories</span>
+                        </div>
+                    </div>
+                    <div class="service-card fade-up">
+                        <div class="service-icon">🎯</div>
+                        <h3>Таргетированная реклама</h3>
+                        <p>Настраиваем и ведём рекламные кампании в Instagram, TikTok, YouTube. Оптимизируем по CPL и ROAS.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">Meta Ads</span>
+                            <span class="service-tag">YouTube Ads</span>
+                            <span class="service-tag">TikTok Ads</span>
+                        </div>
+                    </div>
+                    <div class="service-card fade-up">
+                        <div class="service-icon">🤝</div>
+                        <h3>Influencer-маркетинг</h3>
+                        <p>Подбираем блогеров по нише и ЦА, координируем кампании и замеряем реальный эффект от каждого посева.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">Nano</span>
+                            <span class="service-tag">Micro</span>
+                            <span class="service-tag">Macro</span>
+                        </div>
+                    </div>
+                    <div class="service-card fade-up">
+                        <div class="service-icon">📊</div>
+                        <h3>Аналитика и отчётность</h3>
+                        <p>Дашборды, A/B-тесты, анализ конкурентов. Принимаем решения на основе данных, а не интуиции.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">KPI дашборд</span>
+                            <span class="service-tag">A/B тесты</span>
+                            <span class="service-tag">Аудит</span>
+                        </div>
+                    </div>
+                    <div class="service-card fade-up">
+                        <div class="service-icon">🌐</div>
+                        <h3>Комьюнити-менеджмент</h3>
+                        <p>Отвечаем на комментарии, работаем с негативом, проводим активности и конкурсы для вовлечения аудитории.</p>
+                        <div class="service-tags">
+                            <span class="service-tag">Активации</span>
+                            <span class="service-tag">UGC</span>
+                            <span class="service-tag">ORM</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROCESS -->
+            <section class="process-section" id="process">
+                <div class="process-title-row">
+                    <div>
+                        <span class="section-tag">Как работаем</span>
+                        <h2 class="section-title">Путь от старта<br>до результата</h2>
+                    </div>
+                    <div>
+                        <p class="process-sub">Прозрачный процесс с чёткими сроками на каждом этапе. Никаких размытых KPI — только конкретные цели и метрики роста.</p>
+                    </div>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step fade-up">
+                        <div class="step-circle active-step">01</div>
+                        <h4>Анализ</h4>
+                        <p>Изучаем бренд, нишу, конкурентов и ЦА. Формируем базис стратегии.</p>
+                    </div>
+                    <div class="process-step fade-up">
+                        <div class="step-circle">02</div>
+                        <h4>Стратегия</h4>
+                        <p>Создаём контент-план, определяем KPI, выстраиваем воронки привлечения.</p>
+                    </div>
+                    <div class="process-step fade-up">
+                        <div class="step-circle">03</div>
+                        <h4>Запуск</h4>
+                        <p>Производим контент, настраиваем рекламу, запускаем кампании.</p>
+                    </div>
+                    <div class="process-step fade-up">
+                        <div class="step-circle">04</div>
+                        <h4>Рост</h4>
+                        <p>Анализируем результаты, тестируем гипотезы, масштабируем то, что работает.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RESULTS BAND -->
+            <div class="results-band">
+                <div class="results-grid">
+                    <div class="result-item fade-up">
+                        <div class="result-num">120+</div>
+                        <div class="result-label">Клиентов обслужено</div>
+                    </div>
+                    <div class="result-item fade-up">
+                        <div class="result-num">4 млн</div>
+                        <div class="result-label">Суммарный охват в мес</div>
+                    </div>
+                    <div class="result-item fade-up">
+                        <div class="result-num">3.2×</div>
+                        <div class="result-label">Средний рост продаж</div>
+                    </div>
+                    <div class="result-item fade-up">
+                        <div class="result-num">4 года</div>
+                        <div class="result-label">На рынке SMM</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CASES -->
+            <section class="cases-section" id="cases">
+                <span class="section-tag">Кейсы</span>
+                <h2 class="section-title">Успешные проекты</h2>
+                <div class="cases-grid">
+                    <div class="case-card fade-up">
+                        <div class="case-img c1">
+                            <div class="case-img-bg"></div>
+                            <div class="case-platform-badge">Instagram + TikTok</div>
+                        </div>
+                        <div class="case-body">
+                            <div class="case-niche">Fashion</div>
+                            <h3>Бренд одежды LaceUp</h3>
+                            <p>С нуля выстроили присутствие в Instagram и TikTok. Создали узнаваемую эстетику, запустили Reels-серии и influencer-кампанию.</p>
+                            <div class="case-metrics">
+                            <div class="case-metric"><div class="val">+182%</div><div class="lbl">Подписчики</div></div>
+                            <div class="case-metric"><div class="val">×2.8</div><div class="lbl">Продажи</div></div>
+                            <div class="case-metric"><div class="val">6 мес</div><div class="lbl">Срок</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-card fade-up">
+                        <div class="case-img c2">
+                            <div class="case-img-bg"></div>
+                            <div class="case-platform-badge">Telegram + Instagram</div>
+                        </div>
+                        <div class="case-body">
+                            <div class="case-niche">Beauty</div>
+                            <h3>Студия красоты Bloom</h3>
+                            <p>Перезапустили SMM с фокусом на экспертность. Создали Telegram-канал и выстроили контентную воронку для записи на услуги.</p>
+                            <div class="case-metrics">
+                                <div class="case-metric"><div class="val">+240%</div><div class="lbl">Охваты</div></div>
+                                <div class="case-metric"><div class="val">×3.5</div><div class="lbl">Запись</div></div>
+                                <div class="case-metric"><div class="val">4 мес</div><div class="lbl">Срок</div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="case-card fade-up">
+                        <div class="case-img c3">
+                            <div class="case-img-bg"></div>
+                            <div class="case-platform-badge">Instagram + TikTok</div>
+                        </div>
+                        <div class="case-body">
+                            <div class="case-niche">Фитнес</div>
+                            <h3>Сеть фитнес-клубов Forma</h3>
+                            <p>Перевели офлайн-аудиторию в онлайн, запустили серию обучающих видео и розыгрышей, снизили стоимость лида.</p>
+                            <div class="case-metrics">
+                                <div class="case-metric"><div class="val">+95%</div><div class="lbl">Подписчики</div></div>
+                                <div class="case-metric"><div class="val">−40%</div><div class="lbl">Стоимость лида</div></div>
+                                <div class="case-metric"><div class="val">8 мес</div><div class="lbl">Срок</div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PRICING -->
+            <section class="pricing-section" id="pricing">
+                <span class="section-tag">Тарифы</span>
+                <h2 class="section-title">Прозрачные цены</h2>
+                <div class="pricing-grid">
+                    <div class="price-card fade-up">
+                        <div class="price-name">Старт</div>
+                        <div class="price-amount">10 000 грн</div>
+                        <div class="price-period">в месяц</div>
+                        <div class="price-divider"></div>
+                        <ul class="price-features">
+                            <li>1 соцсеть на выбор</li>
+                            <li>16 постов в месяц</li>
+                            <li>Stories (3×/нед)</li>
+                            <li>Базовая аналитика</li>
+                            <li>Ежемесячный отчёт</li>
+                        </ul>
+                        <button class="price-btn">Выбрать тариф</button>
+                    </div>
+                    <div class="price-card featured fade-up">
+                        <div class="featured-badge">Популярный</div>
+                        <div class="price-name">Рост</div>
+                        <div class="price-amount">20 000 грн</div>
+                        <div class="price-period">в месяц</div>
+                        <div class="price-divider"></div>
+                        <ul class="price-features">
+                            <li>2 соцсети</li>
+                            <li>24 поста в месяц</li>
+                            <li>Reels / TikTok (8×/мес)</li>
+                            <li>Таргетированная реклама</li>
+                            <li>Influencer-подбор</li>
+                            <li>Еженедельная аналитика</li>
+                        </ul>
+                        <button class="price-btn">Выбрать тариф</button>
+                    </div>
+                    <div class="price-card fade-up">
+                        <div class="price-name">Про</div>
+                        <div class="price-amount">От 30к грн</div>
+                        <div class="price-period">в месяц, индивидуально</div>
+                        <div class="price-divider"></div>
+                        <ul class="price-features">
+                            <li>Все соцсети</li>
+                            <li>Безлимитный контент</li>
+                            <li>Видеопроизводство</li>
+                            <li>Полный таргет + посевы</li>
+                            <li>Персональный стратег</li>
+                            <li>Еженедельные созвоны</li>
+                        </ul>
+                        <button class="price-btn">Обсудить проект</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- TESTIMONIALS -->
+            <section class="testi-section">
+                <span class="section-tag">Отзывы</span>
+                <h2 class="section-title">Что говорят клиенты</h2>
+                <div class="testi-grid">
+                    <div class="testi-card fade-up">
+                        <div class="testi-stars">★★★★★</div>
+                        <p class="testi-text">«За три месяца работы с PULSE наш Instagram вырос с 2k до 18k подписчиков. Главное — продажи через директ выросли вдвое. Это реальный результат, а не просто красивые посты.»</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar av1">АК</div>
+                            <div>
+                                <div class="testi-name">Анна Коваль</div>
+                                <div class="testi-role">Основатель LaceUp</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card fade-up">
+                        <div class="testi-stars">★★★★★</div>
+                        <p class="testi-text">«Ребята сделали то, что другие агентства обещали годами. Наш Telegram-канал стал реальным каналом продаж. Стоимость привлечения клиента снизилась на 60%.»</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar av2">МШ</div>
+                            <div>
+                                <div class="testi-name">Максим Шевчнеко</div>
+                                <div class="testi-role">CEO Bloom Studio</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card fade-up">
+                        <div class="testi-stars">★★★★★</div>
+                        <p class="testi-text">«Работаем уже 8 месяцев. Самое ценное — прозрачность. Еженедельные отчёты, внятные KPI, команда всегда на связи. Охваты выросли в 4 раза.»</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar av3">ЕС</div>
+                            <div>
+                                <div class="testi-name">Елена Соколова</div>
+                                <div class="testi-role">Маркетинг-директор Forma</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testi-card fade-up">
+                        <div class="testi-stars">★★★★★</div>
+                        <p class="testi-text">«Пробовали разных подрядчиков. PULSE — первые, кто думает о бизнес-результате, а не о количестве постов. Подписчики живые, вовлечённость реальная.»</p>
+                        <div class="testi-author">
+                            <div class="testi-avatar av4">ДЛ</div>
+                            <div>
+                                <div class="testi-name">Дмитрий Лебедев</div>
+                                <div class="testi-role">Владелец RestoCo</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CTA -->
+            <section class="cta-section" id="contact">
+                <div class="cta-glow"></div>
+                <span class="section-tag" style="color:var(--accent)">Старт проекта</span>
+                <h2 class="section-title">Готовы сделать<br>ваш бренд громким?</h2>
+                <p class="cta-sub">Оставьте контакт — разберём вашу нишу и предложим стратегию бесплатно на первом созвоне.</p>
+                <div class="cta-form">
+                    <input type="text" class="cta-input" placeholder="Ваш Telegram или email">
+                    <button class="cta-submit">Обсудить проект →</button>
+                </div>
+            </section>
+
+        </main>
+        
+        <!-- FOOTER -->
+        <footer>
+            <div class="footer-top">
+                <div>
+                    <div class="footer-brand">PULSE<span>.</span></div>
+                    <p class="footer-desc">SMM-агентство для бизнеса, который хочет расти. Работаем с брендами по всей Украине.</p>
+                </div>
+                <div class="footer-col">
+                    <h5>Услуги</h5>
+                    <a href="#">SMM-стратегия</a>
+                    <a href="#">Контент-продакшн</a>
+                    <a href="#">Таргет</a>
+                    <a href="#">Influencer-маркетинг</a>
+                    <a href="#">Аналитика</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Компания</h5>
+                    <a href="#">О нас</a>
+                    <a href="#">Кейсы</a>
+                    <a href="#">Команда</a>
+                    <a href="#">Блог</a>
+                </div>
+                <div class="footer-col">
+                    <h5>Контакт</h5>
+                    <a href="#">@pulse_smm</a>
+                    <a href="#">pulse@agency.ua</a>
+                    <a href="#">+380 00-000-00-00</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="footer-copy">© 2026 PULSE Agency. Все права защищены.</span>
+                <div class="footer-socials">
+                    <a href="#" class="social-btn">TG</a>
+                    <a href="#" class="social-btn">INST</a>
+                    <a href="#" class="social-btn">TT</a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
