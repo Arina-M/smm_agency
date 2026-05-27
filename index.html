@@ -25,18 +25,20 @@
                     <li><a href="#contact">Контакти</a></li>
                 </ul>
                 <a href="#contact" class="nav-cta">Обговорити проєкт</a>
-                <button class="burger" onclick="document.querySelector('.mobile-menu').classList.add('open')">
-                    <span></span><span></span><span></span>
+                <button class="menu-toggle" type="button" aria-label="Відкрити меню" aria-controls="mobile-nav" aria-expanded="false" data-menu-open>
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </button>
             </nav>
 
-            <div class="mobile-menu">
-                <button class="mobile-close" onclick="document.querySelector('.mobile-menu').classList.remove('open')">✕</button>
-                <a href="#about" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Про нас</a>
-                <a href="#services" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Послуги</a>
-                <a href="#cases" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Кейси</a>
-                <a href="#pricing" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Ціни</a>
-                <a href="#contact" onclick="document.querySelector('.mobile-menu').classList.remove('open')">Контакти</a>
+            <div class="mobile-nav" id="mobile-nav" aria-hidden="true">
+                <button class="mobile-nav__close" type="button" aria-label="Закрити меню" data-menu-close>✕</button>
+                <a href="#about">Про нас</a>
+                <a href="#services">Послуги</a>
+                <a href="#cases">Кейси</a>
+                <a href="#pricing">Ціни</a>
+                <a href="#contact">Контакти</a>
             </div>
 
         </header>
@@ -48,52 +50,52 @@
                 <div>
                     <div class="hero-badge">SMM агентство</div>
                     <h1>РОБИМО<br>БРЕНДИ<br><em>ГУЧНИМИ</em></h1>
-                    <p class="hero-sub">Стратегічний SMM для бізнесу, який прагне розвиватися. Створюємо контент, формуємо аудиторію, перетворюємо підписників на клієнтів.</p>
+                    <p class="hero-description">Стратегічний SMM для бізнесу, який прагне розвиватися. Створюємо контент, формуємо аудиторію, перетворюємо підписників на клієнтів.</p>
                     <div class="hero-actions">
                         <a href="#contact" class="btn-primary">Почати проєкт</a>
                         <a href="#cases" class="btn-outline">Дивитись кейси</a>
                     </div>
                 </div>
-                <div class="hero-right fade-up">
-                    <div class="hero-stats-row">
+                <div class="hero-dashboard reveal-on-scroll">
+                    <div class="hero-stats">
                         <div class="stat-card">
-                            <div class="num">120+</div>
-                            <div class="label">Клієнтів по всій Україні</div>
+                            <div class="stat-value">120+</div>
+                            <div class="stat-label">Клієнтів по всій Україні</div>
                         </div>
-                        <div class="stat-card accent">
-                            <div class="num">4×</div>
-                            <div class="label">Середнє зростання охоплення</div>
+                        <div class="stat-card stat-card--accent">
+                            <div class="stat-value">4×</div>
+                            <div class="stat-label">Середнє зростання охоплення</div>
                         </div>
                     </div>
                     <div class="hero-visual">
-                        <div class="vis-title">Зростання аудиторії — останні 6 місяців</div>
-                        <div class="vis-bar-wrap">
-                            <div class="vis-bar-row">
-                                <div class="vis-bar-label">INST</div>
-                                <div class="vis-bar-track"><div class="vis-bar-fill a1" style="width:82%"></div></div>
-                                <div class="vis-bar-val">+82%</div>
+                        <div class="growth-chart__title">Зростання аудиторії — останні 6 місяців</div>
+                        <div class="growth-chart__bars">
+                            <div class="growth-chart__row">
+                                <div class="growth-chart__label">INST</div>
+                                <div class="growth-chart__track"><div class="growth-chart__fill growth-chart__fill--primary" style="width:82%"></div></div>
+                                <div class="growth-chart__value">+82%</div>
                             </div>
-                            <div class="vis-bar-row">
-                                <div class="vis-bar-label">TG</div>
-                                <div class="vis-bar-track"><div class="vis-bar-fill a2" style="width:65%"></div></div>
-                                <div class="vis-bar-val">+65%</div>
+                            <div class="growth-chart__row">
+                                <div class="growth-chart__label">TG</div>
+                                <div class="growth-chart__track"><div class="growth-chart__fill growth-chart__fill--dark" style="width:65%"></div></div>
+                                <div class="growth-chart__value">+65%</div>
                             </div>
-                            <div class="vis-bar-row">
-                                <div class="vis-bar-label">TT</div>
-                                <div class="vis-bar-track"><div class="vis-bar-fill a3" style="width:91%"></div></div>
-                                <div class="vis-bar-val">+91%</div>
+                            <div class="growth-chart__row">
+                                <div class="growth-chart__label">TT</div>
+                                <div class="growth-chart__track"><div class="growth-chart__fill growth-chart__fill--muted" style="width:91%"></div></div>
+                                <div class="growth-chart__value">+91%</div>
                             </div>
-                            <div class="vis-bar-row">
-                                <div class="vis-bar-label">YT</div>
-                                <div class="vis-bar-track"><div class="vis-bar-fill a2" style="width:47%"></div></div>
-                                <div class="vis-bar-val">+47%</div>
+                            <div class="growth-chart__row">
+                                <div class="growth-chart__label">YT</div>
+                                <div class="growth-chart__track"><div class="growth-chart__fill growth-chart__fill--dark" style="width:47%"></div></div>
+                                <div class="growth-chart__value">+47%</div>
                             </div>
                         </div>
-                        <div class="vis-platforms">
-                            <div class="vis-platform">Instagram</div>
-                            <div class="vis-platform">Telegram</div>
-                            <div class="vis-platform">TikTok</div>
-                            <div class="vis-platform">YouTube</div>
+                        <div class="growth-chart__platforms">
+                            <div class="growth-chart__platform">Instagram</div>
+                            <div class="growth-chart__platform">Telegram</div>
+                            <div class="growth-chart__platform">TikTok</div>
+                            <div class="growth-chart__platform">YouTube</div>
                         </div>
                     </div>
                 </div>
@@ -119,29 +121,29 @@
                         </div>
                     </div>
                     <div class="about-right">
-                        <div class="about-item fade-up">
-                            <span class="about-num">01</span>
+                        <div class="about-item reveal-on-scroll">
+                            <span class="about-stat-value">01</span>
                             <div>
                                 <h4>Глибокий аналіз перед стартом</h4>
                                 <p>Вивчаємо нішу, конкурентів та аудиторію — лише потім беремося за розробку стратегії.</p>
                             </div>
                         </div>
-                        <div class="about-item fade-up">
-                            <span class="about-num">02</span>
+                        <div class="about-item reveal-on-scroll">
+                            <span class="about-stat-value">02</span>
                             <div>
                                 <h4>Ні шаблонам, так позиціонуванню</h4>
                                 <p>Кожен бренд є унікальним. Наш контент впізнають навіть без логотипу.</p>
                             </div>
                         </div>
-                        <div class="about-item fade-up">
-                            <span class="about-num">03</span>
+                        <div class="about-item reveal-on-scroll">
+                            <span class="about-stat-value">03</span>
                             <div>
                                 <h4>Прозора звітність</h4>
                                 <p>Щотижневі дашборди, щомісячні стратегічні наради. Ви завжди в курсі подій.</p>
                             </div>
                         </div>
-                        <div class="about-item fade-up">
-                            <span class="about-num">04</span>
+                        <div class="about-item reveal-on-scroll">
+                            <span class="about-stat-value">04</span>
                             <div>
                                 <h4>Один менеджер — ціла команда</h4>
                                 <p>Один контакт, який керує командою, до складу якої входять стратег, дизайнер, копірайтер і таргетолог.</p>
@@ -156,7 +158,7 @@
                 <span class="section-tag">Послуги</span>
                 <h2 class="section-title">Чим ми займаємося</h2>
                 <div class="services-grid">
-                    <div class="service-card fade-up">
+                    <div class="service-card reveal-on-scroll">
                         <div class="service-icon">📐</div>
                         <h3>SMM-стратегія</h3>
                         <p>Повноцінна стратегія присутності в соціальних мережах: позиціонування, TOV, контент-план, воронки продажів через соціальні мережі.</p>
@@ -166,7 +168,7 @@
                             <span class="service-tag">Карта контенту</span>
                         </div>
                     </div>
-                    <div class="service-card fade-up">
+                    <div class="service-card reveal-on-scroll">
                         <div class="service-icon">🎬</div>
                         <h3>Виробництво контенту</h3>
                         <p>Фото, відео, Reels, Stories, каруселі — створюємо контент, який хочеться зберігати та пересилати.</p>
@@ -176,7 +178,7 @@
                             <span class="service-tag">Stories</span>
                         </div>
                     </div>
-                    <div class="service-card fade-up">
+                    <div class="service-card reveal-on-scroll">
                         <div class="service-icon">🎯</div>
                         <h3>Таргетована реклама</h3>
                         <p>Налаштовуємо та проводимо рекламні кампанії в Instagram, TikTok, YouTube. Оптимізуємо за показниками CPL та ROAS.</p>
@@ -186,7 +188,7 @@
                             <span class="service-tag">TikTok Ads</span>
                         </div>
                     </div>
-                    <div class="service-card fade-up">
+                    <div class="service-card reveal-on-scroll">
                         <div class="service-icon">🤝</div>
                         <h3>Influencer-маркетинг</h3>
                         <p>Підбираємо блогерів за нішею та цільовою аудиторією, координуємо кампанії та вимірюємо реальний ефект від кожного розміщення.</p>
@@ -196,7 +198,7 @@
                             <span class="service-tag">Macro</span>
                         </div>
                     </div>
-                    <div class="service-card fade-up">
+                    <div class="service-card reveal-on-scroll">
                         <div class="service-icon">📊</div>
                         <h3>Аналітика та звітність</h3>
                         <p>Дашборди, A/B-тести, аналіз конкурентів. Приймаємо рішення на основі даних, а не інтуїції.</p>
@@ -206,7 +208,7 @@
                             <span class="service-tag">Аудит</span>
                         </div>
                     </div>
-                    <div class="service-card fade-up">
+                    <div class="service-card reveal-on-scroll">
                         <div class="service-icon">🌐</div>
                         <h3>Комуніті-менеджмент</h3>
                         <p>Відповідаємо на коментарі, працюємо з негативними відгуками, проводимо заходи та конкурси для залучення аудиторії.</p>
@@ -231,23 +233,23 @@
                     </div>
                 </div>
                 <div class="process-steps">
-                    <div class="process-step fade-up">
-                        <div class="step-circle active-step">01</div>
+                    <div class="process-step reveal-on-scroll">
+                        <div class="process-step__number process-step__number--active">01</div>
                         <h4>Аналіз</h4>
                         <p>Вивчаємо бренд, нішу, конкурентів та цільову аудиторію. Формуємо основу стратегії.</p>
                     </div>
-                    <div class="process-step fade-up">
-                        <div class="step-circle">02</div>
+                    <div class="process-step reveal-on-scroll">
+                        <div class="process-step__number">02</div>
                         <h4>Стратегія</h4>
                         <p>Створюємо контент-план, визначаємо KPI, вибудовуємо воронки залучення.</p>
                     </div>
-                    <div class="process-step fade-up">
-                        <div class="step-circle">03</div>
+                    <div class="process-step reveal-on-scroll">
+                        <div class="process-step__number">03</div>
                         <h4>Запуск</h4>
                         <p>Створюємо контент, налаштовуємо рекламу, запускаємо кампанії.</p>
                     </div>
-                    <div class="process-step fade-up">
-                        <div class="step-circle">04</div>
+                    <div class="process-step reveal-on-scroll">
+                        <div class="process-step__number">04</div>
                         <h4>Зріст</h4>
                         <p>Аналізуємо результати, перевіряємо гіпотези, масштабуємо те, що працює.</p>
                     </div>
@@ -257,20 +259,20 @@
             <!-- RESULTS BAND -->
             <div class="results-band">
                 <div class="results-grid">
-                    <div class="result-item fade-up">
-                        <div class="result-num">120+</div>
+                    <div class="result-item reveal-on-scroll">
+                        <div class="result-value">120+</div>
                         <div class="result-label">клієнтов обслужено</div>
                     </div>
-                    <div class="result-item fade-up">
-                        <div class="result-num">4 млн</div>
+                    <div class="result-item reveal-on-scroll">
+                        <div class="result-value">4 млн</div>
                         <div class="result-label">Загальне охоплення за місяць</div>
                     </div>
-                    <div class="result-item fade-up">
-                        <div class="result-num">3.2×</div>
+                    <div class="result-item reveal-on-scroll">
+                        <div class="result-value">3.2×</div>
                         <div class="result-label">Середній приріст продажів</div>
                     </div>
-                    <div class="result-item fade-up">
-                        <div class="result-num">4 роки</div>
+                    <div class="result-item reveal-on-scroll">
+                        <div class="result-value">4 роки</div>
                         <div class="result-label">На ринку SMM</div>
                     </div>
                 </div>
@@ -281,51 +283,51 @@
                 <span class="section-tag">Кейси</span>
                 <h2 class="section-title">Успішні проєкти</h2>
                 <div class="cases-grid">
-                    <div class="case-card fade-up">
-                        <div class="case-img c1">
-                            <div class="case-img-bg"></div>
-                            <div class="case-platform-badge">Instagram + TikTok</div>
+                    <div class="case-card reveal-on-scroll">
+                        <div class="case-media case-media--fashion">
+                            <div class="case-media__background"></div>
+                            <div class="case-platform">Instagram + TikTok</div>
                         </div>
                         <div class="case-body">
-                            <div class="case-niche">Fashion</div>
+                            <div class="case-category">Fashion</div>
                             <h3>Бренд одягу LaceUp</h3>
                             <p>З нуля розбудували присутність в Instagram та TikTok. Створили впізнавану естетику, запустили серії Reels та кампанію з інфлюенсерами.</p>
                             <div class="case-metrics">
-                            <div class="case-metric"><div class="val">+182%</div><div class="lbl">Підписники</div></div>
-                            <div class="case-metric"><div class="val">×2.8</div><div class="lbl">Продажі</div></div>
-                            <div class="case-metric"><div class="val">6 міс</div><div class="lbl">Строк</div></div>
+                            <div class="case-metric"><div class="case-metric__value">+182%</div><div class="case-metric__label">Підписники</div></div>
+                            <div class="case-metric"><div class="case-metric__value">×2.8</div><div class="case-metric__label">Продажі</div></div>
+                            <div class="case-metric"><div class="case-metric__value">6 міс</div><div class="case-metric__label">Строк</div></div>
                             </div>
                         </div>
                     </div>
-                    <div class="case-card fade-up">
-                        <div class="case-img c2">
-                            <div class="case-img-bg"></div>
-                            <div class="case-platform-badge">Telegram + Instagram</div>
+                    <div class="case-card reveal-on-scroll">
+                        <div class="case-media case-media--beauty">
+                            <div class="case-media__background"></div>
+                            <div class="case-platform">Telegram + Instagram</div>
                         </div>
                         <div class="case-body">
-                            <div class="case-niche">Beauty</div>
+                            <div class="case-category">Beauty</div>
                             <h3>Студія краси Bloom</h3>
                             <p>Перезапустили SMM, зосередившись на експертності. Створили Telegram-канал і розробили контентну воронку для реєстрації на послуги.</p>
                             <div class="case-metrics">
-                                <div class="case-metric"><div class="val">+240%</div><div class="lbl">Охоплення</div></div>
-                                <div class="case-metric"><div class="val">×3.5</div><div class="lbl">Записів</div></div>
-                                <div class="case-metric"><div class="val">4 міс</div><div class="lbl">Строк</div></div>
+                                <div class="case-metric"><div class="case-metric__value">+240%</div><div class="case-metric__label">Охоплення</div></div>
+                                <div class="case-metric"><div class="case-metric__value">×3.5</div><div class="case-metric__label">Записів</div></div>
+                                <div class="case-metric"><div class="case-metric__value">4 міс</div><div class="case-metric__label">Строк</div></div>
                             </div>
                         </div>
                     </div>
-                    <div class="case-card fade-up">
-                        <div class="case-img c3">
-                            <div class="case-img-bg"></div>
-                            <div class="case-platform-badge">Instagram + TikTok</div>
+                    <div class="case-card reveal-on-scroll">
+                        <div class="case-media case-media--fitness">
+                            <div class="case-media__background"></div>
+                            <div class="case-platform">Instagram + TikTok</div>
                         </div>
                         <div class="case-body">
-                            <div class="case-niche">Фитнес</div>
+                            <div class="case-category">Фитнес</div>
                             <h3>Мережа фітнес-клубів Forma</h3>
                             <p>Перевели офлайн-аудиторію в онлайн, запустили серію навчальних відео та розіграшів, знизили вартість ліда.</p>
                             <div class="case-metrics">
-                                <div class="case-metric"><div class="val">+95%</div><div class="lbl">Підписники</div></div>
-                                <div class="case-metric"><div class="val">−40%</div><div class="lbl">Вартість ліда</div></div>
-                                <div class="case-metric"><div class="val">8 міс</div><div class="lbl">Строк</div></div>
+                                <div class="case-metric"><div class="case-metric__value">+95%</div><div class="case-metric__label">Підписники</div></div>
+                                <div class="case-metric"><div class="case-metric__value">−40%</div><div class="case-metric__label">Вартість ліда</div></div>
+                                <div class="case-metric"><div class="case-metric__value">8 міс</div><div class="case-metric__label">Строк</div></div>
                             </div>
                         </div>
                     </div>
@@ -337,27 +339,27 @@
                 <span class="section-tag">Тарифи</span>
                 <h2 class="section-title">Прозорі ціни</h2>
                 <div class="pricing-grid">
-                    <div class="price-card fade-up">
-                        <div class="price-name">Старт</div>
-                        <div class="price-amount">10 000 грн</div>
-                        <div class="price-period">в місяць</div>
-                        <div class="price-divider"></div>
-                        <ul class="price-features">
+                    <div class="pricing-card reveal-on-scroll">
+                        <div class="pricing-card__name">Старт</div>
+                        <div class="pricing-card__amount">10 000 грн</div>
+                        <div class="pricing-card__period">в місяць</div>
+                        <div class="pricing-card__divider"></div>
+                        <ul class="pricing-card__features">
                             <li>1 соціальна мережа на вибір</li>
                             <li>16 постів у місяць</li>
                             <li>Stories (3×/тиж)</li>
                             <li>Базова аналітика</li>
                             <li>Щомісячний звіт</li>
                         </ul>
-                        <button class="price-btn">Обрати тариф</button>
+                        <button class="pricing-card__button">Обрати тариф</button>
                     </div>
-                    <div class="price-card featured fade-up">
-                        <div class="featured-badge">Популярний</div>
-                        <div class="price-name">Зріст</div>
-                        <div class="price-amount">20 000 грн</div>
-                        <div class="price-period">в місяць</div>
-                        <div class="price-divider"></div>
-                        <ul class="price-features">
+                    <div class="pricing-card pricing-card--featured reveal-on-scroll">
+                        <div class="pricing-card__badge">Популярний</div>
+                        <div class="pricing-card__name">Зріст</div>
+                        <div class="pricing-card__amount">20 000 грн</div>
+                        <div class="pricing-card__period">в місяць</div>
+                        <div class="pricing-card__divider"></div>
+                        <ul class="pricing-card__features">
                             <li>2 соціальні мережі</li>
                             <li>24 поста в місяць</li>
                             <li>Reels / TikTok (8×/міс)</li>
@@ -365,14 +367,14 @@
                             <li>Influencer-підбір</li>
                             <li>Щотижнева аналітика</li>
                         </ul>
-                        <button class="price-btn">Обрати тариф</button>
+                        <button class="pricing-card__button">Обрати тариф</button>
                     </div>
-                    <div class="price-card fade-up">
-                        <div class="price-name">Про</div>
-                        <div class="price-amount">Від 30к грн</div>
-                        <div class="price-period">в місяць, індивідуально</div>
-                        <div class="price-divider"></div>
-                        <ul class="price-features">
+                    <div class="pricing-card reveal-on-scroll">
+                        <div class="pricing-card__name">Про</div>
+                        <div class="pricing-card__amount">Від 30к грн</div>
+                        <div class="pricing-card__period">в місяць, індивідуально</div>
+                        <div class="pricing-card__divider"></div>
+                        <ul class="pricing-card__features">
                             <li>Усі соціальні мережі</li>
                             <li>Безлімітний контент</li>
                             <li>Відеопродакшн</li>
@@ -380,60 +382,104 @@
                             <li>Особистий стратег</li>
                             <li>Щотижневі телефонні наради</li>
                         </ul>
-                        <button class="price-btn">Обговорити проєкт</button>
+                        <button class="pricing-card__button">Обговорити проєкт</button>
                     </div>
                 </div>
             </section>
 
             <!-- TESTIMONIALS -->
-            <section class="testi-section">
+            <section class="testimonials-section">
                 <span class="section-tag">Відгуки</span>
                 <h2 class="section-title">Що говорять клієнти</h2>
-                <div class="testi-grid">
-                    <div class="testi-card fade-up">
-                        <div class="testi-stars">★★★★★</div>
-                        <p class="testi-text">«За три місяці роботи з PULSE кількість підписників у нашому Instagram зросла з 2 тис. до 18 тис. Головне — продажі через Direct подвоїлися. Це реальний результат, а не просто гарні дописи.»</p>
-                        <div class="testi-author">
-                            <div class="testi-avatar av1">АК</div>
+                <div class="testimonials-grid">
+                    <div class="testimonial-card reveal-on-scroll">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__text">«За три місяці роботи з PULSE кількість підписників у нашому Instagram зросла з 2 тис. до 18 тис. Головне — продажі через Direct подвоїлися. Це реальний результат, а не просто гарні дописи.»</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar testimonial-card__avatar--rose">АК</div>
                             <div>
-                                <div class="testi-name">Анна Коваль</div>
-                                <div class="testi-role">Засновник LaceUp</div>
+                                <div class="testimonial-card__name">Анна Коваль</div>
+                                <div class="testimonial-card__role">Засновник LaceUp</div>
                             </div>
                         </div>
                     </div>
-                    <div class="testi-card fade-up">
-                        <div class="testi-stars">★★★★★</div>
-                        <p class="testi-text">«Хлопці зробили те, що інші агентства обіцяли роками. Наш Telegram-канал став справжнім каналом продажів. Вартість залучення клієнта знизилася на 60%.»</p>
-                        <div class="testi-author">
-                            <div class="testi-avatar av2">МШ</div>
+                    <div class="testimonial-card reveal-on-scroll">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__text">«Хлопці зробили те, що інші агентства обіцяли роками. Наш Telegram-канал став справжнім каналом продажів. Вартість залучення клієнта знизилася на 60%.»</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar testimonial-card__avatar--dark">МШ</div>
                             <div>
-                                <div class="testi-name">Максим Шевчнеко</div>
-                                <div class="testi-role">CEO Bloom Studio</div>
+                                <div class="testimonial-card__name">Максим Шевчнеко</div>
+                                <div class="testimonial-card__role">CEO Bloom Studio</div>
                             </div>
                         </div>
                     </div>
-                    <div class="testi-card fade-up">
-                        <div class="testi-stars">★★★★★</div>
-                        <p class="testi-text">«Працюємо вже 8 місяців. Найцінніше — прозорість. Щотижневі звіти, чіткі KPI, команда завжди на зв’язку. Охоплення зросло в 4 рази.»</p>
-                        <div class="testi-author">
-                            <div class="testi-avatar av3">ОС</div>
+                    <div class="testimonial-card reveal-on-scroll">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__text">«Працюємо вже 8 місяців. Найцінніше — прозорість. Щотижневі звіти, чіткі KPI, команда завжди на зв’язку. Охоплення зросло в 4 рази.»</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar testimonial-card__avatar--accent">ОС</div>
                             <div>
-                                <div class="testi-name">Олена Соколова</div>
-                                <div class="testi-role">Маркетинг-директорка Forma</div>
+                                <div class="testimonial-card__name">Олена Соколова</div>
+                                <div class="testimonial-card__role">Маркетинг-директорка Forma</div>
                             </div>
                         </div>
                     </div>
-                    <div class="testi-card fade-up">
-                        <div class="testi-stars">★★★★★</div>
-                        <p class="testi-text">«Ми пробували різних підрядників. PULSE — перші, хто дбає про бізнес-результат, а не про кількість публікацій. Підписники активні, залученість реальна.»</p>
-                        <div class="testi-author">
-                            <div class="testi-avatar av4">ДЛ</div>
+                    <div class="testimonial-card reveal-on-scroll">
+                        <div class="testimonial-card__stars">★★★★★</div>
+                        <p class="testimonial-card__text">«Ми пробували різних підрядників. PULSE — перші, хто дбає про бізнес-результат, а не про кількість публікацій. Підписники активні, залученість реальна.»</p>
+                        <div class="testimonial-card__author">
+                            <div class="testimonial-card__avatar testimonial-card__avatar--violet">ДЛ</div>
                             <div>
-                                <div class="testi-name">Дмитро Лобов</div>
-                                <div class="testi-role">Власник RestoCo</div>
+                                <div class="testimonial-card__name">Дмитро Лобов</div>
+                                <div class="testimonial-card__role">Власник RestoCo</div>
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- TEAM -->
+            <section class="team-section" id="team">
+                <div class="team-head">
+                    <div>
+                        <span class="section-tag">Команда</span>
+                        <h2 class="section-title">Люди, які<br>ведуть ваш SMM</h2>
+                    </div>
+                    <div class="team-intro">
+                        <p>Стратег, таргетолог, дизайнер і контент-продюсер працюють як одна команда: від ідеї до щотижневих цифр у звітах.</p>
+                        <a href="#contact" class="team-link">Познайомитись →</a>
+                    </div>
+                </div>
+                <div class="team-portraits">
+                    <article class="team-card reveal-on-scroll">
+                        <div class="team-info">
+                            <h3>Анна Мороз</h3>
+                            <p>SMM-стратег</p>
+                        </div>
+                        <img src="./assets/images/worker1.png" alt="Анна Мороз">
+                    </article>
+                    <article class="team-card team-card-short team-card-cream reveal-on-scroll">
+                        <div class="team-info">
+                            <h3>Макс Левченко</h3>
+                            <p>Таргетолог</p>
+                        </div>
+                        <img src="./assets/images/worker2.png" alt="Макс Левченко">
+                    </article>
+                    <article class="team-card team-card-light reveal-on-scroll">
+                        <div class="team-info">
+                            <h3>Іра Коваль</h3>
+                            <p>Дизайнерка</p>
+                        </div>
+                        <img src="./assets/images/worker3.png" alt="Іра Коваль">
+                    </article>
+                    <article class="team-card team-card-short team-card-accent reveal-on-scroll">
+                        <div class="team-info">
+                            <h3>Катя Шум</h3>
+                            <p>Контент-продюсер</p>
+                        </div>
+                        <img src="./assets/images/worker4.png" alt="Катя Шум">
+                    </article>
                 </div>
             </section>
 
@@ -470,7 +516,7 @@
                     <h5>Компанія</h5>
                     <a href="#">Про нас</a>
                     <a href="#">Кейси</a>
-                    <a href="#">Команда</a>
+                    <a href="#team">Команда</a>
                     <a href="#">Блог</a>
                 </div>
                 <div class="footer-col">
