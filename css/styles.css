@@ -1687,8 +1687,8 @@ footer{
 
     .btn-outline{
         border: 1px solid #161616;
-        padding: 14px 36px;
-        border-radius: 100px;
+        padding: 12px 36px;
+        border-radius: var(--radius-pill);
         width: 100%;
         justify-content: center;
     }
