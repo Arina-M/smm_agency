@@ -1,9 +1,47 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>PULSE — SMM агентство</title>
+        <title>PULSE — SMM агентство | Instagram, Telegram, Facebook для бізнесу</title>
+
+        <!-- Primary SEO -->
+        <meta name="description" content="PULSE — SMM агентство з 4-річним досвідом. Ведемо Instagram, Telegram та Facebook для бізнесу: стратегія, контент, таргетинг. Понад 120 реалізованих проєктів та реальне зростання показників.">
+        <meta name="keywords" content="SMM агентство, ведення Instagram, таргетинг реклама, контент-маркетинг, SMM Україна, просування в соцмережах, Facebook реклама, Telegram канал">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="PULSE SMM Agency">
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="PULSE — SMM агентство | Instagram, Telegram, Facebook">
+        <meta property="og:description" content="4 роки досвіду, 120+ проєктів. Ведемо соцмережі для бізнесу: стратегія, контент, таргетинг і прозора звітність.">
+        <meta property="og:image" content="./assets/images/og-image.jpg">
+        <meta property="og:locale" content="uk_UA">
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="PULSE — SMM агентство">
+        <meta name="twitter:description" content="4 роки досвіду, 120+ проєктів. Ведемо соцмережі для бізнесу: стратегія, контент, таргетинг.">
+        <meta name="twitter:image" content="./assets/images/og-image.jpg">
+
+        <!-- Structured data -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "MarketingAgency",
+            "name": "PULSE",
+            "description": "SMM агентство. Ведемо Instagram, Telegram та Facebook для бізнесу: стратегія, контент, таргетинг.",
+            "foundingDate": "2021",
+            "numberOfEmployees": { "@type": "QuantitativeValue", "value": 4 },
+            "knowsAbout": ["SMM", "Instagram Marketing", "Telegram Marketing", "Facebook Ads", "Content Marketing"],
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "availableLanguage": "Ukrainian"
+            }
+        }
+        </script>
+
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;900&family=Onest:wght@300;400;500;600&display=swap" rel="stylesheet">
 
@@ -150,6 +188,50 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </section>
+
+            <!-- TEAM -->
+            <section class="team-section" id="team">
+                <div class="team-head">
+                    <div>
+                        <span class="section-tag">Команда</span>
+                        <h2 class="section-title">Люди, які<br>ведуть ваш SMM</h2>
+                    </div>
+                    <div class="team-intro">
+                        <p>Стратег, таргетолог, дизайнер і контент-продюсер працюють як одна команда: від ідеї до щотижневих цифр у звітах.</p>
+                        <a href="#contact" class="team-link">Познайомитись →</a>
+                    </div>
+                </div>
+                <div class="team-portraits">
+                    <article class="team-card reveal-on-scroll">
+                        <div class="team-info">
+                            <h3>Анна Мороз</h3>
+                            <p>SMM-стратег</p>
+                        </div>
+                        <img src="./assets/images/worker1.png" alt="Анна Мороз">
+                    </article>
+                    <article class="team-card team-card-short team-card-cream reveal-on-scroll">
+                        <div class="team-info">
+                            <h3>Макс Левченко</h3>
+                            <p>Таргетолог</p>
+                        </div>
+                        <img src="./assets/images/worker2.png" alt="Макс Левченко">
+                    </article>
+                    <article class="team-card team-card-light reveal-on-scroll">
+                        <div class="team-info">
+                            <h3>Іра Коваль</h3>
+                            <p>Дизайнерка</p>
+                        </div>
+                        <img src="./assets/images/worker3.png" alt="Іра Коваль">
+                    </article>
+                    <article class="team-card team-card-short team-card-accent reveal-on-scroll">
+                        <div class="team-info">
+                            <h3>Катя Шум</h3>
+                            <p>Контент-продюсер</p>
+                        </div>
+                        <img src="./assets/images/worker4.png" alt="Катя Шум">
+                    </article>
                 </div>
             </section>
 
@@ -391,95 +473,60 @@
             <section class="testimonials-section">
                 <span class="section-tag">Відгуки</span>
                 <h2 class="section-title">Що говорять клієнти</h2>
-                <div class="testimonials-grid">
-                    <div class="testimonial-card reveal-on-scroll">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p class="testimonial-card__text">«За три місяці роботи з PULSE кількість підписників у нашому Instagram зросла з 2 тис. до 18 тис. Головне — продажі через Direct подвоїлися. Це реальний результат, а не просто гарні дописи.»</p>
-                        <div class="testimonial-card__author">
-                            <div class="testimonial-card__avatar testimonial-card__avatar--rose">АК</div>
-                            <div>
-                                <div class="testimonial-card__name">Анна Коваль</div>
-                                <div class="testimonial-card__role">Засновник LaceUp</div>
+                <div class="testimonials-carousel">
+                    <div class="carousel-viewport">
+                        <div class="testimonials-track">
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__stars">★★★★★</div>
+                                <p class="testimonial-card__text">«За три місяці роботи з PULSE кількість підписників у нашому Instagram зросла з 2 тис. до 18 тис. Головне — продажі через Direct подвоїлися. Це реальний результат, а не просто гарні дописи.»</p>
+                                <div class="testimonial-card__author">
+                                    <div class="testimonial-card__avatar testimonial-card__avatar--rose">АК</div>
+                                    <div>
+                                        <div class="testimonial-card__name">Анна Коваль</div>
+                                        <div class="testimonial-card__role">Засновник LaceUp</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__stars">★★★★★</div>
+                                <p class="testimonial-card__text">«Хлопці зробили те, що інші агентства обіцяли роками. Наш Telegram-канал став справжнім каналом продажів. Вартість залучення клієнта знизилася на 60%.»</p>
+                                <div class="testimonial-card__author">
+                                    <div class="testimonial-card__avatar testimonial-card__avatar--dark">МШ</div>
+                                    <div>
+                                        <div class="testimonial-card__name">Максим Шевчнеко</div>
+                                        <div class="testimonial-card__role">CEO Bloom Studio</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__stars">★★★★★</div>
+                                <p class="testimonial-card__text">«Працюємо вже 8 місяців. Найцінніше — прозорість. Щотижневі звіти, чіткі KPI, команда завжди на зв’язку. Охоплення зросло в 4 рази.»</p>
+                                <div class="testimonial-card__author">
+                                    <div class="testimonial-card__avatar testimonial-card__avatar--accent">ОС</div>
+                                    <div>
+                                        <div class="testimonial-card__name">Олена Соколова</div>
+                                        <div class="testimonial-card__role">Маркетинг-директорка Forma</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="testimonial-card">
+                                <div class="testimonial-card__stars">★★★★★</div>
+                                <p class="testimonial-card__text">«Ми пробували різних підрядників. PULSE — перші, хто дбає про бізнес-результат, а не про кількість публікацій. Підписники активні, залученість реальна.»</p>
+                                <div class="testimonial-card__author">
+                                    <div class="testimonial-card__avatar testimonial-card__avatar--violet">ДЛ</div>
+                                    <div>
+                                        <div class="testimonial-card__name">Дмитро Лобов</div>
+                                        <div class="testimonial-card__role">Власник RestoCo</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="testimonial-card reveal-on-scroll">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p class="testimonial-card__text">«Хлопці зробили те, що інші агентства обіцяли роками. Наш Telegram-канал став справжнім каналом продажів. Вартість залучення клієнта знизилася на 60%.»</p>
-                        <div class="testimonial-card__author">
-                            <div class="testimonial-card__avatar testimonial-card__avatar--dark">МШ</div>
-                            <div>
-                                <div class="testimonial-card__name">Максим Шевчнеко</div>
-                                <div class="testimonial-card__role">CEO Bloom Studio</div>
-                            </div>
-                        </div>
+                    <div class="carousel-controls">
+                        <button class="carousel-btn carousel-btn--prev" aria-label="Попередній відгук">&#8592;</button>
+                        <div class="carousel-dots"></div>
+                        <button class="carousel-btn carousel-btn--next" aria-label="Наступний відгук">&#8594;</button>
                     </div>
-                    <div class="testimonial-card reveal-on-scroll">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p class="testimonial-card__text">«Працюємо вже 8 місяців. Найцінніше — прозорість. Щотижневі звіти, чіткі KPI, команда завжди на зв’язку. Охоплення зросло в 4 рази.»</p>
-                        <div class="testimonial-card__author">
-                            <div class="testimonial-card__avatar testimonial-card__avatar--accent">ОС</div>
-                            <div>
-                                <div class="testimonial-card__name">Олена Соколова</div>
-                                <div class="testimonial-card__role">Маркетинг-директорка Forma</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="testimonial-card reveal-on-scroll">
-                        <div class="testimonial-card__stars">★★★★★</div>
-                        <p class="testimonial-card__text">«Ми пробували різних підрядників. PULSE — перші, хто дбає про бізнес-результат, а не про кількість публікацій. Підписники активні, залученість реальна.»</p>
-                        <div class="testimonial-card__author">
-                            <div class="testimonial-card__avatar testimonial-card__avatar--violet">ДЛ</div>
-                            <div>
-                                <div class="testimonial-card__name">Дмитро Лобов</div>
-                                <div class="testimonial-card__role">Власник RestoCo</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!-- TEAM -->
-            <section class="team-section" id="team">
-                <div class="team-head">
-                    <div>
-                        <span class="section-tag">Команда</span>
-                        <h2 class="section-title">Люди, які<br>ведуть ваш SMM</h2>
-                    </div>
-                    <div class="team-intro">
-                        <p>Стратег, таргетолог, дизайнер і контент-продюсер працюють як одна команда: від ідеї до щотижневих цифр у звітах.</p>
-                        <a href="#contact" class="team-link">Познайомитись →</a>
-                    </div>
-                </div>
-                <div class="team-portraits">
-                    <article class="team-card reveal-on-scroll">
-                        <div class="team-info">
-                            <h3>Анна Мороз</h3>
-                            <p>SMM-стратег</p>
-                        </div>
-                        <img src="./assets/images/worker1.png" alt="Анна Мороз">
-                    </article>
-                    <article class="team-card team-card-short team-card-cream reveal-on-scroll">
-                        <div class="team-info">
-                            <h3>Макс Левченко</h3>
-                            <p>Таргетолог</p>
-                        </div>
-                        <img src="./assets/images/worker2.png" alt="Макс Левченко">
-                    </article>
-                    <article class="team-card team-card-light reveal-on-scroll">
-                        <div class="team-info">
-                            <h3>Іра Коваль</h3>
-                            <p>Дизайнерка</p>
-                        </div>
-                        <img src="./assets/images/worker3.png" alt="Іра Коваль">
-                    </article>
-                    <article class="team-card team-card-short team-card-accent reveal-on-scroll">
-                        <div class="team-info">
-                            <h3>Катя Шум</h3>
-                            <p>Контент-продюсер</p>
-                        </div>
-                        <img src="./assets/images/worker4.png" alt="Катя Шум">
-                    </article>
                 </div>
             </section>
 
