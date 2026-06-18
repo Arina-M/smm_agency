@@ -871,15 +871,21 @@ nav{
 }
 
 .case-media--fashion .case-media__background{
-    background:linear-gradient(135deg,#1a1a2e 0%,#16213e 50%,#0f3460 100%);
+    background:
+        linear-gradient(to bottom, rgba(10,10,10,0.25) 0%, rgba(10,10,10,0.65) 100%),
+        url('https://images.unsplash.com/photo-1469334031218-e382a71b716b?auto=format&fit=crop&w=700&q=80') center/cover no-repeat;
 }
 
 .case-media--beauty .case-media__background{
-    background:linear-gradient(135deg,#2d1b33 0%,#4a1942 50%,#6b2d6b 100%);
+    background:
+        linear-gradient(to bottom, rgba(10,10,10,0.20) 0%, rgba(10,10,10,0.60) 100%),
+        url('https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=700&q=80') center/cover no-repeat;
 }
 
 .case-media--fitness .case-media__background{
-    background:linear-gradient(135deg,#0d2818 0%,#1a4a2a 50%,#2d6b3d 100%);
+    background:
+        linear-gradient(to bottom, rgba(10,10,10,0.20) 0%, rgba(10,10,10,0.60) 100%),
+        url('https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=700&q=80') center/cover no-repeat;
 }
 
 .case-platform{
