@@ -135,7 +135,11 @@ nav{
 }
 
 .mobile-nav{
-  display:none;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  gap:32px;
   position:fixed;
   top:0;
   left:0;
@@ -143,14 +147,24 @@ nav{
   bottom:0;
   background:var(--black);
   z-index:200;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  gap:32px;
+  opacity:0;
+  visibility:hidden;
+  pointer-events:none;
+  transform:translateY(-16px) scale(0.98);
+  transition:opacity 0.35s ease, transform 0.35s ease, visibility 0.35s;
 }
 
 .mobile-nav.is-open{
-    display:flex;
+  opacity:1;
+  visibility:visible;
+  pointer-events:all;
+  transform:translateY(0) scale(1);
+}
+
+
+.mobile-nav__cta:hover{
+  opacity:0.85;
+  color:var(--black);
 }
 
 .mobile-nav a{
@@ -161,6 +175,19 @@ nav{
   text-decoration:none;
   letter-spacing:-1px;
   transition:color var(--transition-fast);
+}
+.mobile-nav a.mobile-nav__cta{
+  margin-top:8px;
+  padding:14px 36px;
+  background:var(--accent);
+  color:var(--black);
+  font-family:var(--font-head);
+  font-size:23px;
+  font-weight:700;
+  letter-spacing:-0.3px;
+  border-radius:100px;
+  text-decoration:none;
+  transition:opacity 0.2s;
 }
 
 .mobile-nav a:hover{
@@ -301,10 +328,13 @@ nav{
 }
 
 .btn-outline:hover{
-    gap:14px;
-    background: var(--accent);
-    padding: 16px;
-    border-radius: 24px;
+    /* gap:14px; */
+    /* background: var(--accent); */
+    /* padding: 16px; */
+    /* border-radius: 24px; */
+    /* font-weight: 900; */
+    /* color: var(--color-accent); */
+    color: var(--color-accent-secondary);
 }
 
 .btn-outline::after{
@@ -1527,7 +1557,8 @@ footer{
     color:var(--accent2);
 }
 
-.footer-desc{font-size:14px;
+.footer-desc{
+    font-size:14px;
     line-height:1.7;
     color:rgba(250,250,245,.45);
     max-width:240px;
@@ -1850,6 +1881,11 @@ footer{
 
     footer{
         padding:40px 20px 32px;
+        text-align: center;
+    }
+
+    .footer-desc{
+        margin: 0 auto;
     }
 
     .services-grid,.cases-grid,.pricing-grid{
